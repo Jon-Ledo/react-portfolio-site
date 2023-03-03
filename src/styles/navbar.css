@@ -1,0 +1,134 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  max-width: 260px;
+  height: 100%;
+  background-color: #1d1c1c;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  /* overflow-y: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar__profile-container {
+  padding-top: 1.5rem;
+}
+
+.navbar__profile-pic {
+  border-radius: 50%;
+  border: 8px solid #575353;
+  max-width: 160px;
+  height: auto;
+}
+
+.navbar__links,
+.navbar__links-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__links li,
+.navbar__links-social li {
+  margin-bottom: 15px;
+}
+
+.navbar__links li a,
+.navbar__links-social li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Style for the active link */
+.navbar a.active,
+.navbar a:hover,
+.navbar-toggle-icon:hover {
+  color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+button {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar-toggle-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Navbar styles when screen <1000px */
+@media (max-width: 990px) {
+  .navbar {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__profile-container {
+    padding-top: 0rem;
+    padding-left: 1.5rem;
+  }
+
+  .navbar__profile-pic {
+    display: none;
+  }
+
+  .navbar__links {
+    margin-top: 30px;
+    padding: 0 20px;
+    text-align: start;
+    background-color: #111;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar__links li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #575353;
+  }
+
+  .navbar__links:first-child {
+    padding-top: 15px;
+  }
+
+  .navbar__links:last-child {
+    border-bottom: none;
+  }
+
+  .navbar__socials {
+    padding-right: 1.5rem;
+  }
+
+  .navbar__links-social {
+    display: flex;
+    align-items: end;
+  }
+
+  .navbar__links-social li {
+    margin: 0 10px 0;
+  }
+
+  button {
+    display: block;
+  }
+
+  .toggle {
+    display: none;
+  }
+}
