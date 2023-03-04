@@ -6,6 +6,48 @@
   flex-grow: 1;
   height: 100%;
   overflow-y: auto;
-  padding: 10px;
   margin-left: 260px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-text {
+  color: #f0172d;
+}
+
+.underline {
+  display: block;
+  margin: 5px auto;
+  background-color: #f0172d;
+  width: 100px;
+  height: 3px;
+}
+
+@media (max-width: 990px) {
+  .content {
+    height: 100%;
+    overflow-y: auto;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+}
+
+/* Alter highlighted text */
+::selection {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+::webkit-selection {
+  background-color: #dc3545;
+  color: #fff;
 }
