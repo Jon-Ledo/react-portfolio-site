@@ -1,5 +1,7 @@
 import Navbar from './pages/components/Navbar'
 import Home from './pages/Home'
+import About from './pages/About'
+
 import './App.css'
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
 
         <div className='content'>
           <Home />
+          <About />
         </div>
       </div>
     </div>

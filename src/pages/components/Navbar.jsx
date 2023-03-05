@@ -23,10 +23,10 @@ const Navbar = () => {
       <div className="navbar__links-container">
         <ul className={`navbar__links ${isNavOpen ? '' : 'toggle'}`}>
           <li className="navbar__links-item"><a href="#home" className='active'>Home</a></li>
-          <li className="navbar__links-item"><a href="/about">About Me</a></li>
-          <li className="navbar__links-item"><a href="resume">Resume</a></li>
-          <li className="navbar__links-item"><a href="/projects">Projects</a></li>
-          <li className="navbar__links-item"><a href="contact">Contact</a></li>
+          <li className="navbar__links-item"><a href="#about">About Me</a></li>
+          <li className="navbar__links-item"><a href="#resume">Resume</a></li>
+          <li className="navbar__links-item"><a href="#projects">Projects</a></li>
+          <li className="navbar__links-item"><a href="#contact">Contact</a></li>
         </ul>
       </div>
 

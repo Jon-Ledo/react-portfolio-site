@@ -2,7 +2,8 @@
 
 const Home = () => {
   return (
-    <div className="hero ">
+    <section className="hero" id="home">
+
       <div className="overlay center">
         <div className="hero__text-container">
           <p>Welcome!</p>
@@ -12,11 +13,9 @@ const Home = () => {
           <p>based in <span className="red-text">
             Toronto</span>, Ontario</p>
         </div>
-
       </div>
 
-      
-    </div>
+    </section>
   )
 }
 
