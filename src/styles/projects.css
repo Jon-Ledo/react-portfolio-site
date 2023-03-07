@@ -1,0 +1,16 @@
+.projects {
+  padding: 4rem 0;
+}
+
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 3rem;
+}
+
+.project {
+  width: 30%;
+  flex-grow: 1;
+  border: 1px solid red;
+}

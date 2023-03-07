@@ -63,7 +63,9 @@ body {
 }
 
 .title-container > h2 {
+  font-size: 2.25rem;
   padding: 0 3rem;
+  margin: 0;
 }
 
 .bars {
