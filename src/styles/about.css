@@ -1,7 +1,130 @@
-.about__container {
-  text-align: center;
+.about {
+  padding: 4.5rem 0;
+  font-size: 1.2rem;
 }
 
-.about__container ul {
+.about__flex-container {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.about__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__container h2 {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+/* description */
+.about__description {
+  width: 55%;
+  line-height: 1.75;
   text-align: start;
+  padding: 0 10px;
+}
+
+.about__description h3 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+/* contact section */
+.about__contact {
+  width: 40%;
+  padding-left: 3rem;
+}
+
+.about__contact ul {
+  text-align: start;
+  padding-left: 0px;
+}
+
+.about__contact li {
+  list-style: none;
+  border-bottom: 1px solid #c7c6c6;
+  padding: 12px 0px;
+}
+
+.about__contact li:last-child {
+  border-bottom: none;
+}
+
+.about__contact li a {
+  text-decoration: none;
+  color: #f0172d;
+}
+
+.about__contact button {
+  background-color: #f0172d;
+  padding: 0.8rem 2.6rem;
+  border-radius: 50rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+
+.about__contact button:hover {
+  background-color: #ca2333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* skills */
+.about__skills-container {
+  padding: 3rem 0;
+}
+
+.about__skills-container h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.about__skills-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+}
+
+.about__skills-list li {
+  padding: 10px 25px;
+  border: 1px solid #c7c6c6;
+  font-weight: bold;
+  width: 17%;
+  flex-grow: 1;
+}
+
+.about__skills-list li svg {
+  font-size: 3rem;
+}
+
+@media (max-width: 1440px) {
+  .about__contact {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .about__flex-container {
+    flex-direction: column;
+  }
+
+  .about__description {
+    width: 100%;
+  }
+
+  .about__contact {
+    width: 100%;
+  }
+
+  .about__skills-list li {
+    width: auto;
+  }
 }

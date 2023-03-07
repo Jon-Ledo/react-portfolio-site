@@ -1,41 +1,126 @@
+import {
+  FaGithub,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaBootstrap,
+  FaSass,
+  FaNodeJs,
+  FaNpm,
+  FaGitAlt,
+} from 'react-icons/fa'
+import { SiExpress, SiMysql, SiMongodb } from 'react-icons/si'
+
 const About = () => {
   return (
-    <section id="about">
-      <div className="about__container page-wrapper">
-
+    <section id='about' className='about'>
+      <div className='about__container page-wrapper'>
         <h2>About Me</h2>
-        <span className="underline"></span>
+        <span className='underline'></span>
+        <div className='about__flex-container'>
+          <div className='about__description'>
+            <h3>
+              I'm <span className='red-text'>Jon Ledo</span>, a Full Stack Web
+              Developer
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              facere exercitationem ea blanditiis cumque eveniet vel saepe
+              molestiae labore, reprehenderit, atque hic facilis ipsa sed
+              recusandae repellat quisquam provident aperiam.
+            </p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perspiciatis modi quidem exercitationem voluptate soluta eveniet, a laboriosam enim consequuntur, est unde molestias aspernatur nisi. Sit aut nulla tenetur mollitia, consectetur, blanditiis dignissimos possimus, ad dolores nam dolore enim! Doloremque corrupti rem eos temporibus incidunt vitae debitis sint neque. Libero!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laudantium exercitationem ex deserunt obcaecati, distinctio eos
+              cumque excepturi eius, quasi modi debitis reprehenderit id quo. Ea
+              eius tempora veniam dolorem sequi.
+            </p>
+          </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cupiditate maxime voluptatibus dolorum eligendi iusto modi nesciunt ex nulla at reiciendis quia neque quisquam facere labore qui autem, asperiores aspernatur non debitis quis vero! Cumque maiores, quasi maxime molestias enim ducimus eius accusantium nemo officia. Delectus veniam nostrum voluptate cupiditate!</p>
+          <div className='about__contact'>
+            <ul>
+              <li>
+                <span className='bolded'>Name:</span> Jon Ledo
+              </li>
+              <li>
+                <span className='bolded'>Email:</span>{' '}
+                <a href='mailto:'>jonledo.codes@gmail.com</a>
+              </li>
+              <li>
+                <span className='bolded'>From:</span> Toronto, Ontario
+              </li>
+            </ul>
 
-        <ul>
-          <li>Name: Jon Ledo</li>
-          <li>Email: <span className="">jonledo.codes@gmail.com</span></li>
-          <li></li>
-          <li></li>
-        </ul>
-
-        <button type="submit">Download CV</button>
-
-        <div className="about__skills-container">
-          <h3>My Skills</h3>
-
-          <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-          </ul>
+            <button type='button'>Download CV</button>
+          </div>
         </div>
 
+        <div className='about__skills-container'>
+          <h3>My Skillset</h3>
+          <span className='underline'></span>
+
+          <div className='about__skills-list'>
+            <ul>
+              <li>
+                <FaHtml5 style={{ color: '#E14C24' }} />
+                <p>HTML</p>
+              </li>
+              <li>
+                <FaCss3Alt style={{ color: '#0098E3' }} />
+                <p>CSS</p>
+              </li>
+              <li>
+                <FaJs style={{ color: '#F7DE1E' }} />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <FaReact style={{ color: '#57D6EC' }} />
+                <p>React</p>
+              </li>
+              <li>
+                <FaBootstrap style={{ color: '#8211FB' }} />
+                <p>Bootstrap</p>
+              </li>
+              <li>
+                <FaSass style={{ color: '#C8648E' }} />
+                <p>SASS</p>
+              </li>
+              <li>
+                <FaNodeJs style={{ color: '#80BC04' }} />
+                <p>Node.js</p>
+              </li>
+              <li>
+                <SiExpress style={{ color: '#333333' }} />
+                <p>Express.js</p>
+              </li>
+              <li>
+                <FaNpm style={{ color: '#C32227' }} />
+                <p>NPM</p>
+              </li>
+              <li>
+                <SiMysql style={{ color: '#266A88' }} />
+                <p>MySQL</p>
+              </li>
+              <li>
+                <SiMongodb style={{ color: '#1A8835' }} />
+                <p>MongoDB</p>
+              </li>
+              <li>
+                <FaGitAlt style={{ color: '#DB4C33' }} />
+                <p>Git Collab</p>
+              </li>
+              <li>
+                <FaGithub style={{ color: '#161B22' }} />
+                <p>Github</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   )
 }
-
 
 export default About
