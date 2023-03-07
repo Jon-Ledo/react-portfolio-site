@@ -53,7 +53,7 @@
   transition: all 0.3s ease;
 }
 
-button {
+.navbar__socials button {
   display: none;
   margin: 0;
   padding: 0;
@@ -124,7 +124,7 @@ button {
     margin: 0 10px 0;
   }
 
-  button {
+  .navbar__socials button {
     display: block;
   }
 
