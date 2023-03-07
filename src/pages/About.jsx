@@ -16,7 +16,11 @@ const About = () => {
   return (
     <section id='about' className='about'>
       <div className='about__container page-wrapper'>
-        <h2>About Me</h2>
+        <div className='title-container'>
+          <div className='bars'></div>
+          <h2>About Me</h2>
+          <div className='bars'></div>
+        </div>
         <span className='underline'></span>
         <div className='about__flex-container'>
           <div className='about__description'>

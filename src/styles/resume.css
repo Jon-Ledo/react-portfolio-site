@@ -1,0 +1,40 @@
+.resume {
+  background-color: #faf8ef;
+  padding: 3.5rem 0;
+}
+
+.resume h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+.resume h3 {
+  font-size: 2.25rem;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.resume__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding-top: 2rem;
+}
+
+.resume button {
+  font-size: 1.2rem;
+  background-color: #f0172d;
+  margin-top: 3rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease;
+}
+
+.resume button:hover {
+  background-color: #ca2333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,37 @@
+.card {
+  border: 1px solid #c7c6c6;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  width: 45%;
+  line-height: 1.5;
+}
+
+.card > * {
+  margin: 0;
+}
+
+.card-subject {
+  font-size: 1.5rem;
+}
+
+.card-school {
+  font-weight: bold;
+}
+
+.card-year {
+  color: #fff;
+  text-shadow: 1px 1px #333;
+  font-weight: bold;
+  background-color: #f0172d;
+  letter-spacing: 1.1px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  display: inline;
+}
+
+@media (max-width: 790px) {
+  .card {
+    width: 100%;
+  }
+}
