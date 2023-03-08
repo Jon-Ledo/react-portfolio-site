@@ -1,0 +1,32 @@
+.contact {
+  background-color: #faf8ef;
+  padding: 3.5rem 0;
+}
+
+.contact__details-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+
+.contact__details-info {
+  width: 40%;
+  border: 1px solid red;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid red;
+}
+
+.contact__form-flex {
+  display: flex;
+}
+
+@media (max-width: 990px) {
+  .contact__form-flex {
+    flex-direction: column;
+  }
+}

@@ -1,8 +1,10 @@
 import Navbar from './pages/components/Navbar'
+import Footer from './pages/components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Resume from './pages/Resume'
 import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 
 import './App.css'
 
@@ -17,6 +19,8 @@ function App() {
           <About />
           <Resume />
           <Projects />
+          <Contact />
+          <Footer />
         </div>
       </div>
     </div>
