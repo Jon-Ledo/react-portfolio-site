@@ -1,0 +1,15 @@
+footer {
+  padding: 2rem;
+  font-size: 1.15rem;
+  text-align: end;
+}
+
+footer span a {
+  text-decoration: none;
+}
+
+@media (max-width: 990px) {
+  footer {
+    text-align: center;
+  }
+}
