@@ -1,5 +1,6 @@
 import Card from './components/Card'
 import data from '../data'
+import MyPDFFile from '../assets/Jon_Ledo_Resume_2023_Fullstack-V1.0.pdf'
 
 const Resume = () => {
   return (
@@ -20,7 +21,9 @@ const Resume = () => {
           })}
         </div>
 
-        <button type='button'>Download CV</button>
+        <a href={MyPDFFile} download>
+          <button type='button'>Download CV</button>
+        </a>
       </div>
     </section>
   )

@@ -11,6 +11,7 @@ import {
   FaGitAlt,
 } from 'react-icons/fa'
 import { SiExpress, SiMysql, SiMongodb } from 'react-icons/si'
+import MyPDFFile from '../assets/Jon_Ledo_Resume_2023_Fullstack-V1.0.pdf'
 
 const About = () => {
   return (
@@ -57,7 +58,9 @@ const About = () => {
               </li>
             </ul>
 
-            <button type='button'>Download CV</button>
+            <a href={MyPDFFile} download>
+              <button type='button'>Download CV</button>
+            </a>
           </div>
         </div>
 
