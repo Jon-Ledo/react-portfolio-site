@@ -24,8 +24,9 @@ const Contact = () => {
         <span className='underline'></span>
 
         <div className='contact__details-container'>
-          <article className='contact__details-info'>
-            <p>Name </p>
+          {/* Keeping this here for possible future change */}
+          {/* <article className='contact__details-info'>
+            <p>Follow Me</p>
             <p>Email</p>
             <p>??</p>
 
@@ -34,38 +35,48 @@ const Contact = () => {
               <p>linkedin ICON</p>
               <p>github ICON</p>
             </div>
-          </article>
+          </article> */}
 
           {/* contact form */}
-          <form onSubmit={handleSubmit} className='contact__form'>
+          <form
+            onSubmit={handleSubmit}
+            className='contact__form'
+            data-netlify='true'
+            action='submit'
+            method='POST'
+          >
+            <legend>send me a message</legend>
             <div className='contact__form-flex'>
               <label>
-                Name:
+                <span className='visuallyHidden'>Name:</span>
                 <input
                   type='text'
                   value={name}
+                  placeholder='Name'
                   onChange={(e) => setName(e.target.value)}
                 />
               </label>
 
               <label>
-                Email:
+                <span className='visuallyHidden'>Email:</span>
                 <input
                   type='email'
                   value={email}
+                  placeholder='Email'
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </label>
             </div>
             <label>
-              Message:
+              <span className='visuallyHidden'>Your Message:</span>
               <textarea
                 value={message}
+                placeholder='Your message...'
                 onChange={(e) => setMessage(e.target.value)}
               />
             </label>
 
-            <button type='submit'>Submit</button>
+            <button type='submit'>Send Email</button>
           </form>
         </div>
       </div>
