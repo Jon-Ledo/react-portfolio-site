@@ -1,5 +1,5 @@
 import Card from './components/Card'
-import data from '../data'
+import data from '../data/data'
 import MyPDFFile from '../assets/Jon_Ledo_Resume_2023_Fullstack-V1.0.pdf'
 
 const Resume = () => {
