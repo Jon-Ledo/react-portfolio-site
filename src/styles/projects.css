@@ -9,8 +9,54 @@
   padding-top: 3rem;
 }
 
+/* single project */
 .project {
   width: 30%;
   flex-grow: 1;
-  border: 1px solid red;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project__img-container {
+  position: relative;
+}
+
+.project__img-container:hover img {
+  filter: blur(3px);
+  transition: all 0.3s ease-in-out;
+}
+
+.project__img-container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.project__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__title {
+  display: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.75rem;
+}
+
+.project__overlay:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.project__overlay:hover .project__title {
+  display: block;
 }
