@@ -14,6 +14,10 @@
   color: #fff;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f0efe9;
   color: #333333;

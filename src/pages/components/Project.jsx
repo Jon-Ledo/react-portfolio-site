@@ -1,10 +1,15 @@
 const Project = ({ data }) => {
   return (
     <div className='project'>
-      <h3>Project 1</h3>
-      {/* <img src={pic} alt='' /> */}
-      {/* <img src={data[0].imgURL} alt='' /> */}
-      <p>{data[0].info}</p>
+      <div className='project__img-container'>
+        <img src={data.imgURL} alt={data.title} />
+
+        <div className='project__overlay'>
+          <div className='project__overlay-hover'>
+            <h3 className='project__title'>{data.title}</h3>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

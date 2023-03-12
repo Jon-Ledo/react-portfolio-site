@@ -13,7 +13,9 @@ const Projects = () => {
         <span className='underline'></span>
 
         <div className='projects__container'>
-          <Project data={data} />
+          {data.map((item, index) => {
+            return <Project data={item} key={index} />
+          })}
         </div>
       </div>
     </section>
