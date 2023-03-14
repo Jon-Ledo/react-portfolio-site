@@ -11,11 +11,10 @@
 
 /* single project */
 .project {
-  width: 30%;
+  width: 45%;
   flex-grow: 1;
   overflow: hidden;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .project__img-container {
@@ -31,7 +30,8 @@
   display: block;
   width: 100%;
   object-fit: cover;
-  height: 250px;
+  object-position: 0px 0%;
+  height: 230px;
 }
 
 .project__overlay {
@@ -46,17 +46,55 @@
   transition: all 0.3s ease-in-out;
 }
 
-.project__title {
+.project__overlay-hover {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.project__overlay-hover .underline {
+  display: none;
+}
+
+.project__title,
+.project__tech,
+.project__links {
   display: none;
   color: #fff;
   text-transform: capitalize;
+  font-size: 1.15rem;
+}
+
+.project__title {
   font-size: 1.75rem;
+  margin: 0.5rem auto;
+}
+
+.project__links a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  color: #fff;
+  font-size: 1.35rem;
 }
 
 .project__overlay:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.project__overlay:hover .project__title {
+.project__links a:hover {
+  color: #dc3545;
+}
+
+.project__overlay:hover .project__title,
+.project__overlay:hover .project__tech,
+.project__overlay:hover .project__links,
+.project__overlay:hover .project__overlay-hover .underline {
   display: block;
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+  }
 }
