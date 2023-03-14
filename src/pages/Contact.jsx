@@ -36,9 +36,10 @@ const Contact = () => {
           <form
             onSubmit={handleSubmit}
             className='contact__form'
-            name='portfolio-contact-form'
-            data-netlify='true'
+            // data-netlify='true'
+            netlify
             // action='submit'
+            name='contact-portfolio'
             method='POST'
           >
             <legend>send me a message</legend>
