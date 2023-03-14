@@ -11,6 +11,10 @@ const Navbar = () => {
     setIsNavOpen(!isNavOpen)
   }
 
+  const setNavToFalse = () => {
+    setIsNavOpen(false)
+  }
+
   return (
     <nav className='navbar'>
       <div className='navbar__profile-container'>
@@ -22,20 +26,20 @@ const Navbar = () => {
       <div className='navbar__links-container'>
         <ul className={`navbar__links ${isNavOpen ? '' : 'toggle'}`}>
           <li className='navbar__links-item'>
-            <a href='#home' className='active'>
+            <a href='#home' className='active' onClick={setNavToFalse}>
               Home
             </a>
           </li>
-          <li className='navbar__links-item'>
+          <li className='navbar__links-item' onClick={setNavToFalse}>
             <a href='#about'>About Me</a>
           </li>
-          <li className='navbar__links-item'>
+          <li className='navbar__links-item' onClick={setNavToFalse}>
             <a href='#resume'>Resume</a>
           </li>
-          <li className='navbar__links-item'>
+          <li className='navbar__links-item' onClick={setNavToFalse}>
             <a href='#projects'>Projects</a>
           </li>
-          <li className='navbar__links-item'>
+          <li className='navbar__links-item' onClick={setNavToFalse}>
             <a href='#contact'>Contact</a>
           </li>
         </ul>
