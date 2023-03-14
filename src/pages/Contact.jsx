@@ -7,13 +7,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setName('')
-    setEmail('')
-    setMessage('')
-
     const formData = new FormData(e.target)
-
-    console.log(formData)
 
     fetch('/', {
       method: 'POST',
@@ -22,6 +16,10 @@ const Contact = () => {
     })
       .then(() => alert('Form submitted successfully!'))
       .catch((error) => alert(error))
+
+    setName('')
+    setEmail('')
+    setMessage('')
   }
 
   return (
@@ -38,6 +36,7 @@ const Contact = () => {
           <form
             onSubmit={handleSubmit}
             className='contact__form'
+            name='contact'
             data-netlify='true'
             action='submit'
             method='POST'
