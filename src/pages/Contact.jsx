@@ -7,10 +7,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log({ name, email, message })
     setName('')
     setEmail('')
     setMessage('')
+
+    const formData = new FormData(e.target)
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert('Form submitted successfully!'))
+      .catch((error) => alert(error))
   }
 
   return (
@@ -24,20 +33,6 @@ const Contact = () => {
         <span className='underline'></span>
 
         <div className='contact__details-container'>
-          {/* Keeping this here for possible future change */}
-          {/* <article className='contact__details-info'>
-            <p>Follow Me</p>
-            <p>Email</p>
-            <p>??</p>
-
-            <div className='contact__details-socials'>
-              <p>Socials</p>
-              <p>linkedin ICON</p>
-              <p>github ICON</p>
-            </div>
-          </article> */}
-
-          {/* contact form */}
           <form
             onSubmit={handleSubmit}
             className='contact__form'
@@ -51,6 +46,7 @@ const Contact = () => {
                 <span className='visuallyHidden'>Name:</span>
                 <input
                   type='text'
+                  name='name'
                   value={name}
                   placeholder='Name'
                   onChange={(e) => setName(e.target.value)}
@@ -61,6 +57,7 @@ const Contact = () => {
                 <span className='visuallyHidden'>Email:</span>
                 <input
                   type='email'
+                  name='email'
                   value={email}
                   placeholder='Email'
                   onChange={(e) => setEmail(e.target.value)}
@@ -71,6 +68,7 @@ const Contact = () => {
               <span className='visuallyHidden'>Your Message:</span>
               <textarea
                 value={message}
+                name='message'
                 placeholder='Your message...'
                 onChange={(e) => setMessage(e.target.value)}
               />
