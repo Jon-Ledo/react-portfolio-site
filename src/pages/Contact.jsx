@@ -34,14 +34,13 @@ const Contact = () => {
 
         <div className='contact__details-container'>
           <form
+            name='contact v1'
+            method='post'
+            data-netlify='true'
             onSubmit={handleSubmit}
             className='contact__form'
-            // data-netlify='true'
-            netlify
-            // action='submit'
-            name='contact'
-            // method='POST'
           >
+            <input type='hidden' name='form-name' value='contact v1' />
             <legend>send me a message</legend>
             <div className='contact__form-flex'>
               <label>
