@@ -1,25 +1,22 @@
 import { useState } from 'react'
+import netlify from 'netlify'
 
 const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   // const myForm = e.target
-  //   // const formData = new FormData(myForm)
+  const handleSubmit = (event) => {
+    event.preventDefault()
 
-  //   // console.log(formData)
+    const form = event.target
+    const formData = new FormData(form)
 
-  //   // fetch('/', {
-  //   //   method: 'POST',
-  //   //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //   //   body: new URLSearchParams(formData).toString(),
-  //   // })
-  //   //   .then(() => console.log('Form successfully submitted'))
-  //   //   .catch((error) => alert(error))
-  // }
+    netlify
+      .submitForm(form.getAttribute('name'), formData)
+      .then(() => console.log('Form submission successful'))
+      .catch((error) => console.error('Form submission error:', error))
+  }
 
   return (
     <section id='contact' className='contact'>
@@ -33,10 +30,11 @@ const Contact = () => {
 
         <div className='contact__details-container'>
           <form
+            netlify
             name='contact-form'
             method='POST'
-            data-netlify='true'
-            onSubmit='submit'
+            // data-netlify='true'
+            onSubmit={handleSubmit}
             className='contact__form'
           >
             {/* <input type='hidden' name='form-name' value='contact' /> */}
