@@ -5,21 +5,21 @@ const Contact = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // const myForm = e.target
-    // const formData = new FormData(myForm)
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   // const myForm = e.target
+  //   // const formData = new FormData(myForm)
 
-    // console.log(formData)
+  //   // console.log(formData)
 
-    // fetch('/', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //   body: new URLSearchParams(formData).toString(),
-    // })
-    //   .then(() => console.log('Form successfully submitted'))
-    //   .catch((error) => alert(error))
-  }
+  //   // fetch('/', {
+  //   //   method: 'POST',
+  //   //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //   //   body: new URLSearchParams(formData).toString(),
+  //   // })
+  //   //   .then(() => console.log('Form successfully submitted'))
+  //   //   .catch((error) => alert(error))
+  // }
 
   return (
     <section id='contact' className='contact'>
