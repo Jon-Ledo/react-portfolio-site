@@ -30,17 +30,19 @@ const About = () => {
               Developer
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-              facere exercitationem ea blanditiis cumque eveniet vel saepe
-              molestiae labore, reprehenderit, atque hic facilis ipsa sed
-              recusandae repellat quisquam provident aperiam.
+              As a junior full stack developer, I am driven to succeed and have
+              honed my skills in web development and various JavaScript
+              frameworks. I am proud to have completed a rigorous, six-month
+              fullstack coding bootcamp at the esteemed University of Toronto,
+              earning a final grade of 96%.
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laudantium exercitationem ex deserunt obcaecati, distinctio eos
-              cumque excepturi eius, quasi modi debitis reprehenderit id quo. Ea
-              eius tempora veniam dolorem sequi.
+              As someone from a blue-collar background, I possess a keen eye for
+              detail and a determined work ethic that permeates everything I
+              create. I am highly motivated, unafraid of hard work, and
+              consistently pursue further education in the field of web
+              development on a daily basis.
             </p>
           </div>
 
