@@ -39,8 +39,8 @@ const Contact = () => {
             // data-netlify='true'
             netlify
             // action='submit'
-            name='contact-portfolio'
-            method='POST'
+            name='contact'
+            // method='POST'
           >
             <legend>send me a message</legend>
             <div className='contact__form-flex'>
