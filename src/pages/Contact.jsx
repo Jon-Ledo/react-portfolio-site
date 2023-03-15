@@ -32,7 +32,7 @@ const Contact = () => {
 
         <div className='contact__details-container'>
           <form
-            name='contact-form'
+            name='contact'
             method='POST'
             data-netlify='true'
             onSubmit={handleSubmit}
@@ -49,6 +49,7 @@ const Contact = () => {
                   placeholder='Name'
                   onChange={(e) => setName(e.target.value)}
                 />
+                <input type='hidden' name='form-name' value='contact' />
               </label>
 
               <label>
