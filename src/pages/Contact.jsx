@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import netlify from 'netlify'
 
 const Contact = () => {
   const [name, setName] = useState('')
@@ -9,13 +8,16 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    const form = event.target
-    const formData = new FormData(form)
+    const myForm = event.target
+    const formData = new FormData(myForm)
 
-    netlify
-      .submitForm(form.getAttribute('name'), formData)
-      .then(() => console.log('Form submission successful'))
-      .catch((error) => console.error('Form submission error:', error))
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log('Form successfully submitted'))
+      .catch((error) => alert(error))
   }
 
   return (
@@ -30,14 +32,12 @@ const Contact = () => {
 
         <div className='contact__details-container'>
           <form
-            netlify
             name='contact-form'
             method='POST'
-            // data-netlify='true'
+            data-netlify='true'
             onSubmit={handleSubmit}
             className='contact__form'
           >
-            {/* <input type='hidden' name='form-name' value='contact' /> */}
             <legend>send me a message</legend>
             <div className='contact__form-flex'>
               <label>
