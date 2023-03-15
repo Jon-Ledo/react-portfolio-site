@@ -7,18 +7,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const myForm = e.target
-    const formData = new FormData(myForm)
+    // const myForm = e.target
+    // const formData = new FormData(myForm)
 
-    console.log(formData)
+    // console.log(formData)
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log('Form successfully submitted'))
-      .catch((error) => alert(error))
+    // fetch('/', {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //   body: new URLSearchParams(formData).toString(),
+    // })
+    //   .then(() => console.log('Form successfully submitted'))
+    //   .catch((error) => alert(error))
   }
 
   return (
@@ -33,13 +33,13 @@ const Contact = () => {
 
         <div className='contact__details-container'>
           <form
-            name='contact v1'
-            method='post'
+            name='contact-form'
+            method='POST'
             data-netlify='true'
             onSubmit={handleSubmit}
             className='contact__form'
           >
-            <input type='hidden' name='form-name' value='contact v1' />
+            {/* <input type='hidden' name='form-name' value='contact' /> */}
             <legend>send me a message</legend>
             <div className='contact__form-flex'>
               <label>
